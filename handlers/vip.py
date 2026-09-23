@@ -95,7 +95,7 @@ async def process_receipt(message: Message, bot: Bot, state: FSMContext):
     )
 
     # Barcha adminlarga yuborish
-    admin_ids = {SUPER_ADMIN_ID} | {a.telegram_id for a in await list_admins()}
+    admin_ids = set(SUPER_ADMIN_IDS) | {a.telegram_id for a in await list_admins()}
     caption = (
         f"🆕 <b>Yangi VIP so'rov</b>\n\n"
         f"👤 Foydalanuvchi: {message.from_user.full_name} (@{message.from_user.username or '—'})\n"
