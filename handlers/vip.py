@@ -13,7 +13,7 @@ from states import VipPurchase
 router = Router()
 
 # To'lov qabul qilinadigan karta raqami - o'zgartiring
-PAYMENT_CARD_INFO = "💳 8600 1234 5678 9012 (F. F. Familiya)"
+PAYMENT_CARD_INFO = "💳 8600 3329 7311 9468 (Sh.Majidov)"
 
 
 @router.message(F.text == "👑 VIP")
