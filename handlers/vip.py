@@ -2,7 +2,7 @@ from aiogram import Router, F, Bot
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
-from config import SUPER_ADMIN_ID
+from config import SUPER_ADMIN_IDS
 from database.requests import (
     get_active_vip_plans, get_vip_plan, create_vip_request, get_user,
     list_admins, is_user_vip
